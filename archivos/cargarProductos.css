@@ -1,0 +1,338 @@
+ /*
+	INTERFACES CSS
+*/
+ 
+ button 
+ {
+	padding:10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+}
+
+.contentCargarProductos {
+	text-align: center;
+	margin-left:50px;
+	margin-right:50px;
+	height:100%;
+}
+
+.cuerpoCargarProductos{
+	width: 100%;
+	padding-top:10px;
+	display:inline-flex;display:-webkit-inline-flex;
+}
+
+.titulo{
+	text-align:center;
+	color:white;
+	font-weight: bold;
+	font-size: x-large;
+	margin-top: 10px;
+	padding:10px;
+}
+
+.titulo span{
+	background-color:#006685;
+	padding:10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+}
+
+.cuerpoCargarProductos .rightBody{
+	border: 1px solid black;
+	width:20%;
+	text-align:left;
+	margin-left:15px;
+	padding: 5px;
+	padding-bottom: 5px;
+	height: 600px;
+	
+}
+
+.cuerpoCargarProductos .leftBody{
+	width:80%;
+	text-align:left;
+	padding-bottom: 5px;
+	margin-left:0px;
+	padding-top:0px;
+	overflow: auto;
+}
+
+.boldTitle{
+	text-align:left;
+	color:#006685;
+	font-weight:bold;
+}
+
+.colorGray{
+	color:#666666;
+}
+
+.colorBlue{
+	color:#006685;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.colorGreen{
+	color:#A8C900;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.cuerpoCargarProductos .rightBody button{
+	display:block;
+	margin: auto;
+    margin-bottom: 10px;
+}
+
+.fileUploadDiv {
+    margin-top: 10%;
+    overflow: auto;
+}
+
+.topDivText {
+    float: left;
+    width: 100%;
+}
+
+.fileUploadDiv span {
+    float: left;
+    margin: 15px 15px 5px 15px;
+}
+
+.fileUploadDiv input {
+    float: left;
+    margin: 15px 5px 5px 8px;
+    width: 130px;
+}
+
+.fileUploadDiv img {
+    width: 30px;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.topDivText {
+    float: left;
+    width: 100%;
+}
+
+
+
+.loadderUp {
+    background-color: #BAE9F5;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+}
+
+.loadderText {
+    position: absolute;
+    right: 45%;
+}
+
+#productName{
+	height: 20px;
+    width: 150px;
+    float: right;
+    margin: 15px 0px 5px 0px;
+    text-align: center;
+    position: relative;
+}
+
+#productRef{
+	height: 20px;
+    width: 150px;
+    float: right;
+    margin: 15px 0px 5px 0px;
+    text-align: center;
+    position: relative;
+}
+
+#productPuntos{
+	height: 20px;
+    width: 150px;
+    float: right;
+    margin: 15px 0px 5px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.contentCargarProductos td{
+	
+	text-align: center;
+
+}
+
+.divImgThumb{
+	
+	border: 0px solid black;
+	width: 100px;
+	margin: 5px;
+}
+
+.divImgThumb img{
+
+	width: 100px;
+
+}
+
+.formSearchDiv{
+
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.formSearchDiv img{
+
+	width: 30px;
+	    float: left;
+	    margin-top: 10px;
+	    cursor: pointer;
+}
+
+.formLine{
+	
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 15px;
+	min-height: 25px !important;
+}
+
+.radioDiv{
+	text-align:left;
+	position:absolute;
+	margin-left: 10%;
+}
+
+.radioDiv input[type=radio]{
+	width:100px;
+}
+
+.formSearchDiv input{
+	
+	width: 140px;
+
+}
+
+.leftForm{
+
+	float: left;
+	width: 40%;
+	/*overflow: auto;*/
+	margin-top:auto;
+	margin-bottom:auto;
+	text-align: left;
+	
+}
+
+.rightForm{
+	
+	float: right;
+	width: 60%;
+	/*overflow: auto;*/
+	text-align: right;
+}
+
+.formButtonDiv{
+	
+	width: 100%;
+	text-align: center !important;
+	padding-top: 20px;
+}
+
+.formButtonDiv button{
+	
+
+
+}
+
+.progressBar {
+    border: 1px solid;
+    height: 20px;
+    width: 140px;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+.actionsDiv
+{
+	min-width: 80px;
+	
+}
+
+
+.actionIcons{
+	
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.formGsFields button{
+
+	width: 100px;
+
+
+
+}
+
+
+.gstLineaDiv{
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.gstLineaDiv .rightDiv{
+
+	border: 1px solid;
+	width: 200px;
+	float: left;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+
+.gstLineaDiv .leftDiv{
+
+	border: 1px solid;
+	width: 380px;
+	float: left;
+	margin-right: 10px;
+
+}
+
+.gstLineaDiv input{
+
+	width: 150px;
+	margin-left: 10px;
+
+}
+
+.gstLineaDiv button{
+
+	margin-left: 10px;
+
+}
+
+.gstLineaDiv span{
+
+	margin-left: 10px;
+
+
+}
+
+.rightForm select{
+	
+	width: 140px;
+
+}

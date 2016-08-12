@@ -1,0 +1,326 @@
+	<!DOCTYPE html>
+	<html>
+	
+
+		<script src="jsPDF-master/jspdf.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <div>    
+
+			<title>Selecciona el mejor plan</title>
+
+	</head>
+	<body style="overflow-x: hidden;">
+
+		<div class="row" style="color:solid; background-color:rgb(20,20,20)">
+
+					<div class="col-sm-2"></div>
+
+						<div class="col-sm-8">
+
+						<br><br><br><br><br><br><h1 style="color:rgb(255,255,255); text-align:center;">Cotiza el Plan Web...</h1><p style="color:rgb(200,200,200);">Cotiza el plan web que más se acomode a tus necesidades, ofrecemos desde tiendas virtuales, hasta paginas web corporativas, puedes ver la explicación de cada caraterística en la parte derecha del cuadro, cuando sientas que es la mejor opción para tí escribe tu correo en la parte inferior y envialo al mismo o si prefieres imprime lo que has seleccionado, no hay pierde, decide tu mejor opción y hasla realidad con ¡Ideas Libres!</p><br><br><br><br><br><br>
+
+						</div>
+
+					<div class="col-sm-2"></div>
+
+		</div>
+
+		<div class="content" id="cotizacion" name="cotizacion">  
+
+		<div class="row">
+
+			<div class="page-header">
+			
+					<div class="col-sm-2"></div>
+
+						
+							<h2>Cotiza nuestros planes web</h2>
+
+						
+
+					<div class="col-sm-2"></div>	
+				
+				</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-sm-2"></div>
+
+						<div class="col-sm-8">
+
+							<table class="table table-striped" id="una">
+
+							   <thead>
+									
+									<tr>
+										<th>Carácteristica</th>
+										<th>Elije el que prefieras</th>
+										<th>Explicación</th>
+									</tr>
+
+								</thead>
+									
+										<tr>
+											<td>Característica 1</td>
+											<td id="td_1">
+												<!--<form action="demo_form.asp">-->
+								  				<input id="1_1" type="checkbox" name="vehicle" value="Bike"/><br>
+											</td>
+											<td></td>
+										</tr>
+
+										
+										<tr>
+											<td>Característica 2</td>
+											<td id="td_2">
+												<!--<form action="demo_form.asp">-->
+								  				<input id="1_2" type="checkbox" name="carro" value="Bike" /><br>
+											</td>
+
+											 <td></td>
+										</tr>
+
+											
+										<tr>
+											<td>Característica 3</td>
+											<td id="td_3">
+												<!--<form action="demo_form.asp">-->
+								  				<input id="1_3" type="checkbox" name="vehicle" value="Bike"/><br>
+											</td>
+											<td></td>
+										</tr>
+
+												
+										<tr>
+											<td>Característica 4</td>
+											<td id="td_4">
+												<!--<form action="demo_form.asp">-->
+								  				<input id="1_4" type="checkbox" name="vehicle" value="Bike"/><br>
+											</td>
+
+
+											<td>
+												
+											</td>
+										</tr>
+								</table>
+
+						</div>
+
+				<div class="col-sm-2"></div>
+
+			</div>
+
+			
+
+					<div class="row">
+
+					<div class="col-sm-2"></div>
+
+							<div class="col-sm-8">
+
+							
+
+							<h2>El valor final es: $ <br> <p id="resultado_" style="color:green"></p><h1>COP (Pesos Colombianos)</h1></h2>
+							<!--<div id="resultado_" style="font-weight: bold; font-size: 20pt;">
+										
+		                    </div>-->
+
+		                    </div>
+
+	                    </div>
+
+	                </div>
+
+	                <div class="row">
+
+					<div class="col-sm-2"></div>
+
+							<div class="col-sm-8">
+
+		                        <form action="enviapdf.php" method="POST" name="form_" id="form_"  onsubmit="this.divcontent.value = document.getElementById('cotizacion').innerHTML;">
+
+				                    
+				                    <input type="hidden" name="divcontent" id="divcontent" value="">
+				                    <div class="col-sm-5">
+				                    <input type="text" class="form-control" name="correo" placeholder="Escribe acá tu correo">
+				                    </div>
+				                    <input type="hidden" name="cotizacion_" id="cotizacion_" value="cotizacion" >
+
+				                    </input>
+									<input type="submit" id="submit" class="btn btn-success" name="guarda" value="Enviar mi cotización" >
+									<input type='button' class="btn btn-primary" onclick='window.print();' value='Imprimir mi cotización'>
+									<br><br><br><br><br>
+
+
+								</form>
+
+							</div>
+
+						
+					<div class="col-sm-2"></div>
+
+				</div>		
+				
+			</body>
+
+	</html>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+	<!--<script type="text/javascript">
+
+						$(document).ready(function(){
+
+						var resultado = 0;
+
+				    	var it_a = 10000;
+				    	var it_b = 20000;
+				    	var it_c = 30000;
+				    	var it_d = 40000;
+				    	
+					    $("#1_1").change(function() {
+					    if (this.checked) 
+					    {	
+			    		// Hacer algo si el checkbox ha sido seleccionado
+			        	godiva();
+			            			            
+			        	}
+			        	else{
+			        	nogodiva();
+			        	}
+			    		});
+
+			    		function godiva(){
+
+			    			
+			    			$("#resultado_").empty();
+			    			$("#td_1").css({"background":"solid", "background-color": "green"});
+			    			resultado += it_a;
+			    			$("#resultado_").text(resultado);
+			    			
+
+			    		}
+
+			    		function nogodiva(){
+
+			    			 $("#resultado_").empty();
+			    			 $("#td_1").css({"background":"solid", "background-color": "white"});
+			    			 resultado -= it_a;
+			    			 $("#resultado_").text(resultado);
+			    			 
+
+			    		}
+
+			    		/* ------------------ */
+
+			    		$("#1_2").change(function() {
+					    if (this.checked) 
+					    {	
+			    		// Hacer algo si el checkbox ha sido seleccionado
+			        	godivb();
+			            			            
+			        	}
+			        	else{
+			        	nogodivb();
+			        	}
+			    		});
+
+			    		function godivb(){
+
+			    			
+			    			$("#resultado_").empty();
+			    			$("#td_2").css({"background":"solid", "background-color": "green"});
+			    			resultado += it_b;
+			    			$("#resultado_").text(resultado);
+
+			    		}
+
+			    		function nogodivb(){
+
+			    			 $("#resultado_").empty();
+			    			 $("#td_2").css({"background":"solid", "background-color": "white"});
+			    			 resultado -= it_b;	
+			    			 $("#resultado_").text(resultado);
+
+			    		}
+
+			    		/* ------------------ */
+						
+
+			    		$("#1_3").change(function() {
+					    if (this.checked) 
+					    {	
+			    		// Hacer algo si el checkbox ha sido seleccionado
+			        	godivc();
+			            			            
+			        	}
+			        	else{
+			        	nogodivc();
+			        	}
+			    		});
+
+			    		function godivc(){
+
+			    			
+			    			$("#resultado_").empty();
+			    			$("#td_3").css({"background":"solid", "background-color": "green"});
+			    			resultado += it_c;
+			    			$("#resultado_").text(resultado);
+
+			    		}
+
+			    		function nogodivc(){
+
+			    			 $("#resultado_").empty();
+			    			 $("#td_3").css({"background":"solid", "background-color": "white"});
+			    			 resultado -= it_c;	
+			    			 $("#resultado_").text(resultado);
+
+			    		}
+
+			    		/* ------------------ */
+
+			    		$("#1_4").change(function() {
+					    if (this.checked) 
+					    {	
+			    		// Hacer algo si el checkbox ha sido seleccionado
+			        	godivd();
+			            			            
+			        	}
+			        	else{
+			        	nogodivd();
+			        	}
+			    		});
+
+			    		function godivd(){
+
+			    			
+			    			$("#resultado_").empty();
+			    			$("#td_4").css({"background":"solid", "background-color": "green"});
+			    			resultado += it_d;
+			    			$("#resultado_").text(resultado);
+
+			    		}
+
+			    		function nogodivd(){
+
+			    			 $("#resultado_").empty();
+			    			 $("#td_4").css({"background":"solid", "background-color": "white"});
+			    			 resultado -= it_d;	
+			    			 $("#resultado_").text(resultado);
+
+			    		}
+
+			    		});
+			    		/* ------------------ */
+												
+					</script>-->

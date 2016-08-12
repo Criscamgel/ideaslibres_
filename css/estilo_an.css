@@ -1,0 +1,49 @@
+
+
+img#logo {
+
+    width: 50%;
+}
+
+
+div#contenido{
+
+	display: list-item;
+	margin-top: 5%;
+}
+
+div#c1{
+
+background-color: rgb(40,100,52);
+
+}
+
+div#c2{
+
+background-color: rgb(40,100,52);
+	
+}
+
+div#c3{
+
+background-color: rgb(40,100,52);
+	
+}
+
+nav#navi{
+
+	/*border-radius: 0px;*/
+	/*position: relative;*/ 
+    /* min-height: 50px; */
+    /* margin-bottom: 20px; */
+    /* border: 1px solid transparent; */
+}
+
+.navbar{
+
+     position: none !important;
+     min-height: none !important;
+     margin-bottom: none !important; 
+     border: none !important;
+
+}
